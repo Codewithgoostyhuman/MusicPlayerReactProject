@@ -1,0 +1,134 @@
+.MusicPlayerContainer{
+    border: 2px solid darkgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius:30px;
+    
+    min-width: 400px;
+    min-height: 500px;
+    max-width: fit-content;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding:0px;
+    background-color:darkgreen;
+}
+.body h3,h4{
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    
+
+}
+.body h3{
+    margin-top: 10px;
+}
+
+img{
+    border: 2px solid darkgreen;
+    height: 350px;
+    margin: 25px;
+    border-radius: 25px;
+    min-width: inherit;
+    max-width: fit-content;
+}
+.btn-div{
+    display: flex;
+    gap: 10px;
+}
+button{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50px;
+    background-color:darkgreen;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    /* text-shadow: -1px -1px 1px grey; */
+    align-items: center;
+    justify-content: center;
+     text-align: center;
+     border-color: darkgreen;
+     
+}
+button:hover{
+    border:2px solid lightgreen
+}
+button:active{
+    scale: 0.98;
+    
+}
+button:focus{
+    outline:none;
+}
+
+
+.MusicBars{
+height: 100px;
+display: flex;
+align-items: flex-end;
+gap: 4px;
+}
+.bar{
+    width: 4px;
+    height: 20px;
+    background-color: darkgreen;
+    border-radius: 4px;
+    animation: bounce 1s ease-in-out infinite;
+}
+.bar:nth-child(1){animation-delay: 0.6s;}
+.bar:nth-child(2){animation-delay: 0.2s;}
+.bar:nth-child(3){animation-delay: 0s;}
+.bar:nth-child(4){animation-delay: 0.4s;}
+.bar:nth-child(5){animation-delay: 0.6s;}
+.bar:nth-child(6){animation-delay: 0.2s;}
+.bar:nth-child(7){animation-delay: 0.6s;}
+.bar:nth-child(8){animation-delay: 0.2s;}
+.bar:nth-child(9){animation-delay: 0.4s;}
+.bar:nth-child(10){animation-delay: 0s;}
+.bar:nth-child(11){animation-delay: 0.6s;}
+.bar:nth-child(12){animation-delay: 0.2s;}
+@keyframes bounce{
+    0%,100%{height: 20px;}
+    50%{height: 60px;}
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 1080px) {
+    .MusicPlayerContainer{
+        min-width: unset;
+        width: 80vw;
+        padding: 25px;
+        
+    }
+
+    img{
+        height: 250px;
+        margin: 15px;
+        width: inherit;
+    }
+
+    .MusicBars{
+        height: 60px;
+    }
+
+    button{
+        padding: 10px 14px;
+        margin-bottom: 20px;
+    }
+}
