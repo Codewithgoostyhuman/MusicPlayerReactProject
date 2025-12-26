@@ -1,5 +1,5 @@
 import React, { use, useState ,useRef } from 'react'
-import './MusicPlayer.CSS'
+import './MusicPlayer.css'
 import { songs } from './songs'
 const MusicPlayer = () => {
     const [currentIndex,setCurrentIndex] = useState(0);
